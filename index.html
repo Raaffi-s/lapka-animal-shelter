@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Лапка — приют для животных</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="container header-inner">
+
+        <a href="#" class="logo">
+            ЛАПКА
+        </a>
+
+        <nav class="navigation">
+            <a href="#animals">Наши животные</a>
+            <a href="#about">О приюте</a>
+            <a href="#help">Помочь</a>
+        </nav>
+
+        <a href="#animals" class="header-button">
+            Найти друга
+            <span>↗</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <section class="hero pattern-light">
+
+        <div class="container hero-wrapper">
+
+            <div class="hero-content">
+
+                <div class="hero-label">
+                    ПРИЮТ ДЛЯ ЖИВОТНЫХ
+                </div>
+
+                <div class="hero-main">
+
+
+                    <h1>
+                        У каждого
+                        хвостика
+                        должен быть
+                        свой дом.
+                    </h1>
+
+                    <div class="hero-buttons">
+
+                        <a href="#animals" class="button button-dark">
+                            Найти друга
+                            <span>↗</span>
+                        </a>
+
+                        <a href="#help" class="button button-outline">
+                            Помочь приюту
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-star">
+                    ✦
+                </div>
+
+            </div>
+
+
+            <div class="hero-photo">
+
+                <img
+                        src="images/image1.jpg"
+                        alt="Животные в приюте">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="animals pattern-light" id="animals">
+
+        <div class="container">
+
+            <div class="animals-heading">
+
+                <div class="section-label">
+                    <span></span>
+                    НАШИ<br>
+                    ПОДОПЕЧНЫЕ
+                </div>
+
+                <div class="animals-heading-main">
+
+                    <h2>
+                        Возможно, вы найдёте здесь
+                        своего нового друга
+                    </h2>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="animals-toolbar">
+
+                <div class="animal-counter">
+
+                    <strong>08</strong>
+
+                    <span>
+                        животных<br>
+                        ищут дом
+                    </span>
+
+                </div>
+
+                <div class="filters">
+
+                    <button
+                            class="filter-button active"
+                            data-filter="all">
+                        Все
+                    </button>
+
+                    <button
+                            class="filter-button"
+                            data-filter="dog">
+                        Собаки
+                    </button>
+
+                    <button
+                            class="filter-button"
+                            data-filter="cat">
+                        Кошки
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <div class="animals-grid">
+
+                <article
+                        class="animal-card animal-card-large"
+                        data-type="cat">
+
+                    <img
+                            src="images/image2.jpg"
+                            alt="Луна">
+
+                    <div class="animal-overlay"></div>
+
+                    <span class="animal-type">
+                        КОШКА
+                    </span>
+
+                    <div class="animal-content">
+
+                        <div>
+                            <h3>Луна</h3>
+
+                            <p>
+                                1 год · ласковая
+                            </p>
+                        </div>
+
+                        <span class="animal-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                        class="animal-card animal-card-top"
+                        data-type="cat">
+
+                    <img
+                            src="images/image3.jpg"
+                            alt="Марта">
+
+                    <div class="animal-overlay"></div>
+
+                    <span class="animal-type">
+                        КОШКА
+                    </span>
+
+                    <div class="animal-content">
+
+                        <div>
+                            <h3>Марта</h3>
+
+                            <p>
+                                3 года
+                            </p>
+                        </div>
+
+                        <span class="animal-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                        class="animal-card animal-card-middle"
+                        data-type="dog">
+
+                    <img
+                            src="images/image4.jpg"
+                            alt="Ричи">
+
+                    <div class="animal-overlay"></div>
+
+                    <span class="animal-type">
+                        СОБАКА
+                    </span>
+
+                    <div class="animal-content">
+
+                        <div>
+                            <h3>Ричи</h3>
+
+                            <p>
+                                4 года
+                            </p>
+                        </div>
+
+                        <span class="animal-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                        class="animal-card animal-card-middle"
+                        data-type="dog">
+
+                    <img
+                            src="images/image5.jpg"
+                            alt="Макс">
+
+                    <div class="animal-overlay"></div>
+
+                    <span class="animal-type">
+                        СОБАКА
+                    </span>
+
+                    <div class="animal-content">
+
+                        <div>
+                            <h3>Макс</h3>
+
+                            <p>
+                                2 года · любит прогулки
+                            </p>
+                        </div>
+
+                        <span class="animal-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                        class="animal-card animal-card-small"
+                        data-type="cat">
+
+                    <img
+                            src="images/image7.jpg"
+                            alt="Соня">
+
+                    <div class="animal-overlay"></div>
+
+                    <span class="animal-type">
+                        КОШКА
+                    </span>
+
+                    <div class="animal-content">
+
+                        <div>
+                            <h3>Соня</h3>
+
+                            <p>
+                                2 года
+                            </p>
+                        </div>
+
+                        <span class="animal-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                        class="animal-card animal-card-small"
+                        data-type="cat">
+
+                    <img
+                            src="images/image8.jpg"
+                            alt="Алиса">
+
+                    <div class="animal-overlay"></div>
+
+                    <span class="animal-type">
+                        КОШКА
+                    </span>
+
+                    <div class="animal-content">
+
+                        <div>
+                            <h3>Алиса</h3>
+
+                            <p>
+                                4 года
+                            </p>
+                        </div>
+
+                        <span class="animal-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                        class="animal-card animal-card-wide"
+                        data-type="dog">
+
+                    <img
+                            src="images/image6.jpg"
+                            alt="Боня">
+
+                    <div class="animal-overlay"></div>
+
+                    <span class="animal-type">
+                        СОБАКА
+                    </span>
+
+                    <div class="animal-content">
+
+                        <div>
+                            <h3>Боня</h3>
+
+                            <p>
+                                1 год · игривая
+                            </p>
+                        </div>
+
+                        <span class="animal-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <article
+                        class="animal-card animal-card-wide"
+                        data-type="dog">
+
+                    <img
+                            src="images/image9.jpg"
+                            alt="Тайсон">
+
+                    <div class="animal-overlay"></div>
+
+                    <span class="animal-type">
+                        СОБАКА
+                    </span>
+
+                    <div class="animal-content">
+
+                        <div>
+                            <h3>Тайсон</h3>
+
+                            <p>
+                                3 года · дружелюбный
+                            </p>
+                        </div>
+
+                        <span class="animal-arrow">
+                            ↗
+                        </span>
+
+                    </div>
+
+                </article>
+
+                <div class="animals-heart">
+                    ♡
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="about pattern-dark" id="about">
+
+        <div class="container about-wrapper">
+
+            <div class="about-photo">
+
+                <img
+                        src="images/image1.jpg"
+                        alt="Наши животные">
+
+            </div>
+
+
+            <div class="about-content">
+
+                <div class="section-label section-label-light">
+                    <span></span>
+                    ИСТОРИЯ ПРИЮТА
+                </div>
+
+                <h2>
+                    Второй шанс
+                    начинается
+                    с заботы.
+                </h2>
+
+                <div class="about-text">
+
+                    <p>
+                        Когда животное оказывается
+                        на улице, ему нужны не только
+                        еда и крыша над головой.
+                        Ему нужен человек.
+                    </p>
+
+                    <p>
+                        Мы помогаем животным найти
+                        семью, в которой их будут
+                        любить и никогда больше
+                        не оставят одних.
+                    </p>
+
+                </div>
+
+                <a href="#" class="about-link">
+                    Узнать больше
+                    <span>→</span>
+                </a>
+
+                <div class="about-statistics">
+
+                    <div>
+                        <strong>250+</strong>
+
+                        <span>
+                            животных<br>
+                            нашли дом
+                        </span>
+                    </div>
+
+                    <div>
+                        <strong>7</strong>
+
+                        <span>
+                            лет<br>
+                            работы для <br>
+                            любимых лапок
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="help pattern-light" id="help">
+
+        <div class="container">
+
+            <div class="help-heading">
+
+                <div class="section-label">
+                    <span></span>
+                    КАК ПОМОЧЬ?
+                </div>
+
+                <h2>
+                    Вы можете изменить
+                    чью-то жизнь.
+                </h2>
+
+            </div>
+
+
+            <div class="help-grid">
+
+                <article class="help-card">
+
+                    <span class="help-number">
+                        01
+                    </span>
+
+                    <div class="help-icon">
+                        ⌂
+                    </div>
+
+                    <div class="help-card-content">
+
+                        <h3>
+                            Забрать
+                            домой
+                        </h3>
+
+                        <p>
+                            Подарите животному
+                            семью, заботу
+                            и новый дом.
+                        </p>
+
+                    </div>
+
+                    <span class="help-arrow">
+                        ↗
+                    </span>
+
+                </article>
+
+
+                <article class="help-card help-card-dark">
+
+                    <span class="help-number">
+                        02
+                    </span>
+
+                    <div class="help-icon">
+                        ♡
+                    </div>
+
+                    <div class="help-card-content">
+
+                        <h3>
+                            Стать
+                            волонтёром
+                        </h3>
+
+                        <p>
+                            Помогайте гулять
+                            с животными
+                            и заботиться о них.
+                        </p>
+
+                    </div>
+
+                    <span class="help-arrow">
+                        ↗
+                    </span>
+
+                </article>
+
+
+                <article class="help-card">
+
+                    <span class="help-number">
+                        03
+                    </span>
+
+                    <div class="help-icon">
+                        +
+                    </div>
+
+                    <div class="help-card-content">
+
+                        <h3>
+                            Поддержать
+                            приют
+                        </h3>
+
+                        <p>
+                            Любая помощь помогает
+                            нам заботиться
+                            о животных.
+                        </p>
+
+                    </div>
+
+                    <span class="help-arrow">
+                        ↗
+                    </span>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="cta pattern-dark">
+
+        <div class="container cta-wrapper">
+
+            <div>
+
+                <span class="cta-label">
+                    ВАША ВСТРЕЧА МОЖЕТ ИЗМЕНИТЬ ВСЁ!
+                </span>
+
+                <h2>
+                    Возможно, ваш
+                    лучший друг
+                    уже ждёт вас.
+                </h2>
+
+            </div>
+
+            <div class="cta-action">
+
+                <div class="cta-symbol">
+                    ♡
+                </div>
+
+                <a href="#animals" class="button button-light">
+                    Посмотреть животных
+                    <span>↗</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer pattern-dark">
+
+    <div class="container footer-wrapper">
+
+        <div>
+
+            <div class="logo footer-logo">
+                ЛАПКА
+            </div>
+
+            <p class="footer-description">
+                Приют для животных
+            </p>
+
+        </div>
+
+        <div class="footer-center">
+            Дом начинается с встречи.
+        </div>
+
+        <div class="footer-right">
+            © 2026 Лапка
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
