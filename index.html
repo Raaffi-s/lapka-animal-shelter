@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap"
             rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
@@ -20,53 +20,50 @@
 <body>
 
 <header class="header">
-
     <div class="container header-inner">
-
-        <a href="#" class="logo">
-            ЛАПКА
-        </a>
+        <a href="#" class="logo">ЛАПКА<span class="logo-icon">🐾</span></a>
 
         <nav class="navigation">
             <a href="#animals">Наши животные</a>
             <a href="#about">О приюте</a>
-            <a href="#help">Помочь</a>
+            <a href="#help">Как помочь</a>
+            <a href="#faq">FAQ</a>
         </nav>
 
         <a href="#animals" class="header-button">
             Найти друга
             <span>↗</span>
         </a>
-
     </div>
-
 </header>
-
 
 <main>
 
     <section class="hero pattern-light">
-
         <div class="container hero-wrapper">
 
             <div class="hero-content">
 
                 <div class="hero-label">
+                    <span></span>
                     ПРИЮТ ДЛЯ ЖИВОТНЫХ
                 </div>
 
                 <div class="hero-main">
-
-
                     <h1>
+
                         У каждого
                         хвостика
                         должен быть
                         свой дом.
                     </h1>
 
-                    <div class="hero-buttons">
+                    <p class="hero-description">
+                        Помогаем бездомным животным найти любящую
+                        семью, заботу и новый дом.
+                    </p>
 
+                    <div class="hero-buttons">
                         <a href="#animals" class="button button-dark">
                             Найти друга
                             <span>↗</span>
@@ -75,29 +72,31 @@
                         <a href="#help" class="button button-outline">
                             Помочь приюту
                         </a>
-
                     </div>
-
                 </div>
 
-
-                <div class="hero-star">
-                    ✦
-                </div>
+                <div class="hero-star">✦</div>
 
             </div>
 
-
             <div class="hero-photo">
-
                 <img
                         src="images/image1.jpg"
-                        alt="Животные в приюте">
+                        alt="Собака и кошка из приюта">
 
+                <div class="hero-photo-label">
+                    <strong>НАЙДИ</strong>
+                    <span>СВОЕГО<br>ДРУГА</span>
+                </div>
+
+                <div class="hero-photo-note">
+                    ♡<br>
+                    ЛЮБОВЬ<br>
+                    ЖДЁТ ТЕБЯ
+                </div>
             </div>
 
         </div>
-
     </section>
 
 
@@ -113,30 +112,29 @@
                     ПОДОПЕЧНЫЕ
                 </div>
 
-                <div class="animals-heading-main">
-
+                <div>
                     <h2>
                         Возможно, вы найдёте здесь
                         своего нового друга
                     </h2>
 
-
+                    <p class="section-description">
+                        Познакомьтесь с животными, которые сейчас
+                        особенно ждут встречи со своим человеком.
+                    </p>
                 </div>
 
             </div>
 
-
             <div class="animals-toolbar">
 
                 <div class="animal-counter">
-
-                    <strong>08</strong>
+                    <strong id="animalCount">08</strong>
 
                     <span>
                         животных<br>
                         ищут дом
                     </span>
-
                 </div>
 
                 <div class="filters">
@@ -170,9 +168,7 @@
                         class="animal-card animal-card-large"
                         data-type="cat">
 
-                    <img
-                            src="images/image2.jpg"
-                            alt="Луна">
+                    <img src="images/image3.jpg" alt="Луна">
 
                     <div class="animal-overlay"></div>
 
@@ -181,19 +177,14 @@
                     </span>
 
                     <div class="animal-content">
-
                         <div>
                             <h3>Луна</h3>
-
-                            <p>
-                                1 год · ласковая
-                            </p>
+                            <p>1 год · ласковая</p>
                         </div>
 
-                        <span class="animal-arrow">
+                        <button class="animal-arrow" aria-label="Подробнее">
                             ↗
-                        </span>
-
+                        </button>
                     </div>
 
                 </article>
@@ -203,9 +194,7 @@
                         class="animal-card animal-card-top"
                         data-type="cat">
 
-                    <img
-                            src="images/image3.jpg"
-                            alt="Марта">
+                    <img src="images/image2.jpg" alt="Марта">
 
                     <div class="animal-overlay"></div>
 
@@ -214,19 +203,14 @@
                     </span>
 
                     <div class="animal-content">
-
                         <div>
                             <h3>Марта</h3>
-
-                            <p>
-                                3 года
-                            </p>
+                            <p>3 года</p>
                         </div>
 
-                        <span class="animal-arrow">
+                        <button class="animal-arrow" aria-label="Подробнее">
                             ↗
-                        </span>
-
+                        </button>
                     </div>
 
                 </article>
@@ -236,9 +220,7 @@
                         class="animal-card animal-card-middle"
                         data-type="dog">
 
-                    <img
-                            src="images/image4.jpg"
-                            alt="Ричи">
+                    <img src="images/image4.jpg" alt="Ричи">
 
                     <div class="animal-overlay"></div>
 
@@ -247,19 +229,14 @@
                     </span>
 
                     <div class="animal-content">
-
                         <div>
                             <h3>Ричи</h3>
-
-                            <p>
-                                4 года
-                            </p>
+                            <p>4 года</p>
                         </div>
 
-                        <span class="animal-arrow">
+                        <button class="animal-arrow" aria-label="Подробнее">
                             ↗
-                        </span>
-
+                        </button>
                     </div>
 
                 </article>
@@ -269,9 +246,7 @@
                         class="animal-card animal-card-middle"
                         data-type="dog">
 
-                    <img
-                            src="images/image5.jpg"
-                            alt="Макс">
+                    <img src="images/image5.jpg" alt="Макс">
 
                     <div class="animal-overlay"></div>
 
@@ -280,19 +255,14 @@
                     </span>
 
                     <div class="animal-content">
-
                         <div>
                             <h3>Макс</h3>
-
-                            <p>
-                                2 года · любит прогулки
-                            </p>
+                            <p>2 года · любит прогулки</p>
                         </div>
 
-                        <span class="animal-arrow">
+                        <button class="animal-arrow" aria-label="Подробнее">
                             ↗
-                        </span>
-
+                        </button>
                     </div>
 
                 </article>
@@ -302,9 +272,7 @@
                         class="animal-card animal-card-small"
                         data-type="cat">
 
-                    <img
-                            src="images/image7.jpg"
-                            alt="Соня">
+                    <img src="images/image7.jpg" alt="Соня">
 
                     <div class="animal-overlay"></div>
 
@@ -313,19 +281,14 @@
                     </span>
 
                     <div class="animal-content">
-
                         <div>
                             <h3>Соня</h3>
-
-                            <p>
-                                2 года
-                            </p>
+                            <p>2 года</p>
                         </div>
 
-                        <span class="animal-arrow">
+                        <button class="animal-arrow" aria-label="Подробнее">
                             ↗
-                        </span>
-
+                        </button>
                     </div>
 
                 </article>
@@ -335,9 +298,7 @@
                         class="animal-card animal-card-small"
                         data-type="cat">
 
-                    <img
-                            src="images/image8.jpg"
-                            alt="Алиса">
+                    <img src="images/image8.jpg" alt="Алиса">
 
                     <div class="animal-overlay"></div>
 
@@ -346,19 +307,14 @@
                     </span>
 
                     <div class="animal-content">
-
                         <div>
                             <h3>Алиса</h3>
-
-                            <p>
-                                4 года
-                            </p>
+                            <p>4 года</p>
                         </div>
 
-                        <span class="animal-arrow">
+                        <button class="animal-arrow" aria-label="Подробнее">
                             ↗
-                        </span>
-
+                        </button>
                     </div>
 
                 </article>
@@ -368,9 +324,7 @@
                         class="animal-card animal-card-wide"
                         data-type="dog">
 
-                    <img
-                            src="images/image6.jpg"
-                            alt="Боня">
+                    <img src="images/image6.jpg" alt="Боня">
 
                     <div class="animal-overlay"></div>
 
@@ -379,19 +333,14 @@
                     </span>
 
                     <div class="animal-content">
-
                         <div>
                             <h3>Боня</h3>
-
-                            <p>
-                                1 год · игривая
-                            </p>
+                            <p>1 год · игривая</p>
                         </div>
 
-                        <span class="animal-arrow">
+                        <button class="animal-arrow" aria-label="Подробнее">
                             ↗
-                        </span>
-
+                        </button>
                     </div>
 
                 </article>
@@ -401,9 +350,7 @@
                         class="animal-card animal-card-wide"
                         data-type="dog">
 
-                    <img
-                            src="images/image9.jpg"
-                            alt="Тайсон">
+                    <img src="images/image9.jpg" alt="Тайсон">
 
                     <div class="animal-overlay"></div>
 
@@ -412,26 +359,17 @@
                     </span>
 
                     <div class="animal-content">
-
                         <div>
                             <h3>Тайсон</h3>
-
-                            <p>
-                                3 года · дружелюбный
-                            </p>
+                            <p>3 года · дружелюбный</p>
                         </div>
 
-                        <span class="animal-arrow">
+                        <button class="animal-arrow" aria-label="Подробнее">
                             ↗
-                        </span>
-
+                        </button>
                     </div>
 
                 </article>
-
-                <div class="animals-heart">
-                    ♡
-                </div>
 
             </div>
 
@@ -447,8 +385,12 @@
             <div class="about-photo">
 
                 <img
-                        src="images/image1.jpg"
+                        src="images/image13.jpg"
                         alt="Наши животные">
+
+                <div class="about-photo-badge">
+                    ♡
+                </div>
 
             </div>
 
@@ -469,25 +411,18 @@
                 <div class="about-text">
 
                     <p>
-                        Когда животное оказывается
-                        на улице, ему нужны не только
-                        еда и крыша над головой.
-                        Ему нужен человек.
+                        Когда животное оказывается на улице,
+                        ему нужны не только еда и крыша над головой.
+                        Ему нужен человек, который будет рядом.
                     </p>
 
                     <p>
-                        Мы помогаем животным найти
-                        семью, в которой их будут
-                        любить и никогда больше
-                        не оставят одних.
+                        Мы помогаем собакам и кошкам найти семью,
+                        в которой их будут любить, заботиться о них
+                        и никогда больше не оставят одних.
                     </p>
 
                 </div>
-
-                <a href="#" class="about-link">
-                    Узнать больше
-                    <span>→</span>
-                </a>
 
                 <div class="about-statistics">
 
@@ -505,8 +440,8 @@
 
                         <span>
                             лет<br>
-                            работы для <br>
-                            любимых лапок
+                            помогаем<br>
+                            животным
                         </span>
                     </div>
 
@@ -530,10 +465,17 @@
                     КАК ПОМОЧЬ?
                 </div>
 
-                <h2>
-                    Вы можете изменить
-                    чью-то жизнь.
-                </h2>
+                <div>
+                    <h2>
+                        Вы можете изменить
+                        чью-то жизнь.
+                    </h2>
+
+                    <p class="section-description">
+                        Не обязательно сразу забирать животное домой.
+                        У приюта есть несколько способов помощи.
+                    </p>
+                </div>
 
             </div>
 
@@ -542,9 +484,7 @@
 
                 <article class="help-card">
 
-                    <span class="help-number">
-                        01
-                    </span>
+                    <span class="help-number">01</span>
 
                     <div class="help-icon">
                         ⌂
@@ -553,30 +493,28 @@
                     <div class="help-card-content">
 
                         <h3>
-                            Забрать
-                            домой
+                            Стать хозяином
                         </h3>
 
                         <p>
-                            Подарите животному
-                            семью, заботу
-                            и новый дом.
+                            Подарите животному семью, заботу,
+                            безопасность и новый дом.
                         </p>
 
-                    </div>
+                        <button
+                                class="help-card-button"
+                                data-help="owner">
+                            Узнать больше ↗
+                        </button>
 
-                    <span class="help-arrow">
-                        ↗
-                    </span>
+                    </div>
 
                 </article>
 
 
                 <article class="help-card help-card-dark">
 
-                    <span class="help-number">
-                        02
-                    </span>
+                    <span class="help-number">02</span>
 
                     <div class="help-icon">
                         ♡
@@ -585,30 +523,28 @@
                     <div class="help-card-content">
 
                         <h3>
-                            Стать
-                            волонтёром
+                            Стать волонтёром
                         </h3>
 
                         <p>
-                            Помогайте гулять
-                            с животными
-                            и заботиться о них.
+                            Гуляйте с собаками, общайтесь
+                            с кошками и помогайте приюту.
                         </p>
 
-                    </div>
+                        <button
+                                class="help-card-button"
+                                data-help="volunteer">
+                            Хочу помогать ↗
+                        </button>
 
-                    <span class="help-arrow">
-                        ↗
-                    </span>
+                    </div>
 
                 </article>
 
 
                 <article class="help-card">
 
-                    <span class="help-number">
-                        03
-                    </span>
+                    <span class="help-number">03</span>
 
                     <div class="help-icon">
                         +
@@ -617,23 +553,395 @@
                     <div class="help-card-content">
 
                         <h3>
-                            Поддержать
-                            приют
+                            Помочь финансово
                         </h3>
 
                         <p>
-                            Любая помощь помогает
-                            нам заботиться
-                            о животных.
+                            Даже небольшая сумма помогает
+                            оплачивать корм, лечение и уход.
+                        </p>
+
+                        <button
+                                class="help-card-button"
+                                data-help="money">
+                            Поддержать ↗
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div class="help-form-wrapper" id="helpForm">
+
+                <div class="form-header">
+                    <div>
+                        <span class="form-label">ВАША ПОМОЩЬ</span>
+
+                        <h3>
+                            Расскажите, чем хотите помочь
+                        </h3>
+                    </div>
+
+                    <button
+                            class="form-close"
+                            type="button"
+                            aria-label="Закрыть">
+                        ×
+                    </button>
+                </div>
+
+
+                <form id="helpFormElement" novalidate>
+
+                    <div class="form-grid">
+
+                        <div class="form-field">
+
+                            <label for="firstName">
+                                Имя
+                            </label>
+
+                            <input
+                                    type="text"
+                                    id="firstName"
+                                    name="firstName"
+                                    placeholder="Ваше имя">
+
+                            <small class="error-message"></small>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="lastName">
+                                Фамилия
+                            </label>
+
+                            <input
+                                    type="text"
+                                    id="lastName"
+                                    name="lastName"
+                                    placeholder="Ваша фамилия">
+
+                            <small class="error-message"></small>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="email">
+                                Email
+                            </label>
+
+                            <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="example@mail.com">
+
+                            <small class="error-message"></small>
+
+                        </div>
+
+
+                        <div class="form-field">
+
+                            <label for="helpType">
+                                Как хотите помочь?
+                            </label>
+
+                            <select id="helpType" name="helpType">
+
+                                <option value="">
+                                    Выберите вариант
+                                </option>
+
+                                <option value="owner">
+                                    Стать хозяином
+                                </option>
+
+                                <option value="volunteer">
+                                    Стать волонтёром
+                                </option>
+
+                                <option value="money">
+                                    Помочь финансово
+                                </option>
+
+                            </select>
+
+                            <small class="error-message"></small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-field">
+
+                        <label for="message">
+                            Сообщение
+                        </label>
+
+                        <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Напишите несколько слов..."
+                                rows="4"></textarea>
+
+                        <small class="error-message"></small>
+
+                    </div>
+
+
+                    <button
+                            type="submit"
+                            class="button button-dark form-submit">
+                        Отправить заявку
+                        <span>↗</span>
+                    </button>
+
+                    <div
+                            class="form-success"
+                            id="formSuccess">
+                        Спасибо! Заявка успешно отправлена.
+                        Мы свяжемся с вами.
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="faq pattern-light" id="faq">
+
+        <div class="container">
+
+            <div class="faq-heading">
+
+                <div class="section-label">
+                    <span></span>
+                    ЧАСТЫЕ ВОПРОСЫ
+                </div>
+
+                <div>
+                    <h2>
+                        Всё, что важно знать
+                        перед встречей.
+                    </h2>
+
+                    <p class="section-description">
+                        Собрали ответы на самые частые вопросы
+                        о знакомстве, усыновлении и помощи приюту.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="faq-list">
+
+
+                <article class="faq-item">
+
+                    <button
+                            class="faq-question"
+                            type="button">
+
+                        <span>
+                            Можно ли прийти просто познакомиться?
+                        </span>
+
+                        <span class="faq-button">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Конечно. Перед встречей лучше связаться
+                            с приютом и рассказать, какое животное
+                            вам понравилось. Мы подскажем удобное
+                            время посещения, познакомим вас с питомцем
+                            и расскажем о его характере, привычках
+                            и потребностях.
                         </p>
 
                     </div>
 
-                    <span class="help-arrow">
-                        ↗
-                    </span>
+                </article>
+
+
+                <article class="faq-item">
+
+                    <button
+                            class="faq-question"
+                            type="button">
+
+                        <span>
+                            Можно ли забрать животное сразу?
+                        </span>
+
+                        <span class="faq-button">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Обычно сначала проходит знакомство
+                            с животным и разговор с куратором.
+                            Нам важно убедиться, что питомцу будет
+                            комфортно в новом доме. Поэтому мы обсуждаем
+                            условия содержания, режим, характер
+                            и особенности ухода.
+                        </p>
+
+                    </div>
 
                 </article>
+
+
+                <article class="faq-item">
+
+                    <button
+                            class="faq-question"
+                            type="button">
+
+                        <span>
+                            Что нужно подготовить дома?
+                        </span>
+
+                        <span class="faq-button">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Заранее подготовьте безопасное место
+                            для питомца, миски, корм, лежанку или
+                            переноску, средства ухода и всё необходимое
+                            для прогулок, если это собака. Для кошки
+                            также важно проверить окна и убрать
+                            потенциально опасные предметы.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="faq-item">
+
+                    <button
+                            class="faq-question"
+                            type="button">
+
+                        <span>
+                            Можно ли стать волонтёром без опыта?
+                        </span>
+
+                        <span class="faq-button">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Да. Предыдущий опыт не обязателен.
+                            Волонтёры помогают гулять с собаками,
+                            общаться с кошками, поддерживать порядок,
+                            фотографировать животных и рассказывать
+                            о них в социальных сетях. Мы подберём
+                            задачу, которая подойдёт именно вам.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="faq-item">
+
+                    <button
+                            class="faq-question"
+                            type="button">
+
+                        <span>
+                            Нужно ли платить за усыновление?
+                        </span>
+
+                        <span class="faq-button">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Усыновление не должно становиться покупкой
+                            животного. При этом будущему хозяину важно
+                            быть готовым регулярно тратить средства
+                            на корм, уход, профилактические осмотры
+                            и ветеринарную помощь. Все вопросы
+                            о расходах можно заранее обсудить
+                            с куратором.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="faq-item">
+
+                    <button
+                            class="faq-question"
+                            type="button">
+
+                        <span>
+                            Можно ли помочь, если я не могу взять животное?
+                        </span>
+
+                        <span class="faq-button">
+                            +
+                        </span>
+
+                    </button>
+
+                    <div class="faq-answer">
+
+                        <p>
+                            Конечно. Приюту всегда нужны волонтёры,
+                            финансовая поддержка, корм, средства ухода,
+                            помощь с фотографиями и распространением
+                            информации о животных. Даже небольшая помощь
+                            может приблизить питомца к новому дому.
+                        </p>
+
+                    </div>
+
+                </article>
+
 
             </div>
 
@@ -649,7 +957,7 @@
             <div>
 
                 <span class="cta-label">
-                    ВАША ВСТРЕЧА МОЖЕТ ИЗМЕНИТЬ ВСЁ!
+                    ВАША ВСТРЕЧА МОЖЕТ ИЗМЕНИТЬ ВСЁ
                 </span>
 
                 <h2>
@@ -666,7 +974,9 @@
                     ♡
                 </div>
 
-                <a href="#animals" class="button button-light">
+                <a
+                        href="#animals"
+                        class="button button-light">
                     Посмотреть животных
                     <span>↗</span>
                 </a>
@@ -679,6 +989,58 @@
 
 </main>
 
+<div class="animal-modal" id="animalModal">
+    <div class="animal-modal-overlay"></div>
+
+    <div class="animal-modal-content">
+
+        <button
+                class="animal-modal-close"
+                type="button"
+                aria-label="Закрыть">
+            ×
+        </button>
+
+        <div class="animal-modal-image">
+            <img id="modalAnimalImage" src="" alt="">
+        </div>
+
+        <div class="animal-modal-info">
+
+            <span class="animal-modal-type" id="modalAnimalType"></span>
+
+            <h2 id="modalAnimalName"></h2>
+
+            <p class="animal-modal-age" id="modalAnimalAge"></p>
+
+            <div class="animal-modal-description">
+                <h3>О питомце</h3>
+                <p id="modalAnimalDescription"></p>
+            </div>
+
+            <div class="animal-modal-details">
+                <div>
+                    <span>Характер</span>
+                    <strong id="modalAnimalCharacter"></strong>
+                </div>
+
+                <div>
+                    <span>Особенности</span>
+                    <strong id="modalAnimalHistory"></strong>
+                </div>
+            </div>
+
+            <button
+                    class="button button-dark animal-modal-help"
+                    id="animalModalHelp"
+                    type="button">
+                Хочу стать хозяином
+                <span>↗</span>
+            </button>
+
+        </div>
+    </div>
+</div>
 
 <footer class="footer pattern-dark">
 
@@ -687,7 +1049,7 @@
         <div>
 
             <div class="logo footer-logo">
-                ЛАПКА
+                ЛАПКА<span class="logo-icon">🐾</span>
             </div>
 
             <p class="footer-description">
@@ -712,5 +1074,4 @@
 <script src="js/script.js"></script>
 
 </body>
-
 </html>
