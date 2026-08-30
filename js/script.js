@@ -412,3 +412,30 @@ animalModalHelp.addEventListener("click", () => {
     });
 
 });
+
+const revealElements = document.querySelectorAll(
+    ".history-item, .help-card, .animal-card, .faq-item"
+);
+
+const revealObserver = new IntersectionObserver(
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                revealObserver.unobserve(entry.target);
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.15
+    }
+);
+
+revealElements.forEach(element => {
+    element.classList.add("reveal");
+    revealObserver.observe(element);
+});
